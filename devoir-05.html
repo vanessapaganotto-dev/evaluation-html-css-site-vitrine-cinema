@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Structuration d'une page produit pour une boutique en ligne</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Cinéma Club 108 : actualités, séances, programmation, réservation. La passion des films à Paris." />
+        <meta name="author" content="Cinéma Club 108" />
+        <link rel="stylesheet" type="text/css" href="../css/default.css"/>
+        <link rel="stylesheet" type="text/css" href="../devoir-05/css/style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Chela+One&display=swap" rel="stylesheet"/>
+        
+    </head>
+        <body>
+            <header class="entete">
+                <div class="logo-titre">
+                    <img src="../devoir-05/img/annexes/logo.png" alt="Logo du cinéma club 108"/>                   
+                    <h1>La passion des films</h1>
+                </div>
+                <nav aria-label="Menu principal">
+                    <ul class="nav-menu">
+                        <li><a href="#">Programme</a></li>
+                        <li><a href="#">Actualités</a></li>
+                        <li><a href="#">Jeune public</a></li>                    
+                        <li><a href="#">Séances privées</a></li>                    
+                        <li><a href="#">Tarifs</a></li>              
+                    </ul>
+                    <form action="#" method="get" class="search-form">
+                        <input type="text" name="q" placeholder="Recherche" aria-label="Champ de recherche">
+                    </form>
+                </nav>
+            </header>
+            <main class="grid-container">
+                <section class="grid-item1">
+                   <article>
+                        <h2>LA UNE</h2>
+                        <img src="img/cinema1000.webp" alt="Devanture d'un cinéma" srcset="img/cinema1000-small.jpg 600w, img/cinema1000.jpg 1000w"
+                        sizes="(max-width: 600px) 100vw, 50vw"/>       <!-- attention taille responsive et/ou reduire la qualité -->
+                         <h3>Lorem ipsum dolor sit</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis feugiat mauris a maximus. Etiam vestibulum, elit nec tincidunt sollicitudin, tellus ex tempus quam, sed fringilla lorem dui nec massa. Aliquam erat volutpat. Phasellus lectus magna, feugiat a maximus quis, aliquet vel eros. Vivamus congue elementum magna, sed sodales eros malesuada quis. Phasellus accumsan fermentum orci a consectetur. Proin aliquam sed lacus tempus luctus. Sed nec ligula sit amet felis facilisis molestie at vitae turpis. Aliquam congue finibus pulvinar. In hac habitasse platea dictumst. Sed rhoncus auctor ipsum, in sodales sapien tincidunt id. Curabitur fringilla blandit nisl. Vestibulum pellentesque molestie lectus, sed dapibus nunc malesuada ut. Donec lacinia convallis ante, mattis eleifend tortor faucibus eget. Quisque porttitor risus et orci rutrum, eu sagittis ex fermentum.<a href="#">Lire la suite</a></p> 
+                        <div class="btn-container">
+                            <button class="btn btnBleu">Réserver</button>    
+                            <button class="btn btnBleu2">Commander l'affiche</button> 
+                        </div>
+                    </article>
+                </section>
+                <section class="grid-item2">
+                    <article>
+                        <h2 id="titre-seances">SEANCES</h2>             
+                        <table class="table1" aria-labelledby="titre-seances">
+                            <thead>
+                                <tr>
+                                    <th>HEURE</th><th>TITRE</th><th>SALLE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>9H</td><td>Independance Day</td><td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>14H</td><td>Les visiteurs</td><td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>16H</td><td>Dîner de cons</td><td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>18H</td><td>Aquaman</td><td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>20H</td><td>Mulan</td><td>5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                </section>
+                <section class="grid-item3" itemscope itemtype="https://schema.org/MovieTheater">
+                        <article>
+                            <h2>ADRESSE</h2>             
+                            <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                                <span class="nomClub" itemprop="name">Le club 108</span><br/>
+                                <span itemprop="streetAddress">18 rue Marie Curie</span>&nbsp;&nbsp;-&nbsp;&nbsp; 
+                                <span itemprop="postalCode">75003</span> 
+                                <span itemprop="addressLocality">PARIS</span>
+                            </address>
+                        </article>
+                </section>
+                <section class="grid-item4">
+                        <article>
+                            <h2>PUBLICATION</h2>  
+                            <div class="image-wrapper">
+                                <img src="img/cinema2.webp" alt="Vue d'un cinéma de nuit" srcset="img/cinema2-small.jpg 600w, img/cinema2.jpg 1000w"
+                                sizes="(max-width: 600px) 100vw, 50vw"/> 
+                                <div class="overlay-content">
+                                    <button class="btn-regarder">Regarder</button>
+                                </div>
+                            </div>
+                        </article>
+                </section>
+                <section class="grid-item5">
+                    <article class="bloc-semaine">
+                        <h2>DANS LA SEMAINE</h2>
+                        <div class="semaine-flex"> 
+                               <div class="semaine">
+                                   <img src="img/theatre2.webp" alt="Devanture d'un théâtre" srcset="img/theatre2-small.jpg 600w, img/theatre2.jpg 1000w"
+                                    sizes="(max-width: 600px) 100vw, 50vw"/> 
+                                    <h3>Lorem ipsum dolor sit</h3>
+                                    <p>In hac habitasse platea dictumst. Sed rhoncus auctor ipsum, in sodales sapien tincidunt id. Curabitur fringilla blandit nisl. Vestibulum pellentesque molestie lectus, sed dapibus nunc malesuada ut. Donec lacinia convallis ante, mattis eleifend tortor faucibus eget. Quisque porttitor risus et orci rutrum, eu sagittis ex fermentum. Lorem ipsum dolor sit amet.<a href="#">Lire la suite</a></p> 
+                                </div>
+                               <div class="semaine">
+                                    <img src="img/fauteuils.webp" alt="Fauteuils rouge en salle" srcset="img/fauteuils-small.jpg 600w, img/fauteuils.jpg 1000w"
+                                    sizes="(max-width: 600px) 100vw, 50vw"/> 
+                                    <h3>Lorem ipsum dolor sit</h3>
+                                    <p>In hac habitasse platea dictumst. Sed rhoncus auctor ipsum, in sodales sapien tincidunt id. Curabitur fringilla blandit nisl. Vestibulum pellentesque molestie lectus, sed dapibus nunc malesuada ut. Donec lacinia convallis ante, mattis eleifend tortor faucibus eget. Quisque porttitor risus et orci rutrum, eu sagittis ex fermentum. Lorem ipsum dolor sit amet.<a href="#">Lire la suite</a></p> 
+                                </div>
+                            </div>
+                    </article>
+                </section>
+            </main>      
+            <footer aria-label="Pied de page">
+                <div class="footer-grid">
+                  <ul class="footer-links">
+                        <li><a href="#">CLUB 108</a></li> 
+                        <li><a href="#">Tarifs et horaires</a></li>
+                        <li><a href="#">A proximité</a></li>
+                        <li><a href="#">Séances privées</a></li>
+                        <li><a href="#">Parking et accès</a></li>
+                        <li><a href="#">Carte club</a></li>
+                        <li><a href="#">Jobs étudiants</a></li>
+                        <li><a href="#">Espace partenaire</a></li>
+                        <li><a href="#">Parking et accès</a></li>
+                        <li><a href="#">Carte club</a></li>
+                        <li><a href="#">Jobs étudiants</a></li>
+                        <li><a href="#">Espace partenaire</a></li>
+                        <li><a href="#">Tarifs et horaires</a></li>
+                        <li><a href="#">A proximité</a></li>
+                        <li><a href="#">Séances privées</a></li>
+                    </ul>
+                    <img src="../devoir-05/img/annexes/logo.png" alt="" aria-hidden="true"/>
+                </div>
+            </footer>
+     </body>
+</html>
+     
