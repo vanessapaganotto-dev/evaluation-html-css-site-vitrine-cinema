@@ -77,6 +77,7 @@ README.md (ce fichier)
 
 Vanessa PAGANOTTO 
 
+---
 
 ## Licence
 
