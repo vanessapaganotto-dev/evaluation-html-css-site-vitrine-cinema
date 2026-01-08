@@ -75,6 +75,9 @@ README.md (ce fichier)
 
 ## Auteur
 
-Vanessa PAGANOTTO - Projet d’apprentissage HTML/CSS - 2026
+Vanessa PAGANOTTO 
 
----
+
+## Licence
+
+Ce projet est sous licence MIT.
